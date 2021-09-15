@@ -11,7 +11,6 @@ export const container = style([
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    height: "100vh",
   },
   atoms({
     background: { lightMode: "background", darkMode: "primary" },
