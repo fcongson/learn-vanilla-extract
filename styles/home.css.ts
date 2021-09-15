@@ -11,6 +11,8 @@ export const container = style({
   justifyContent: "center",
   alignItems: "center",
   height: "100vh",
+  backgroundColor: vars.color.background,
+  color: vars.color.primary,
 });
 
 export const main = style({
@@ -26,7 +28,7 @@ export const footer = style({
   fontFamily: vars.font.body,
   width: "100%",
   height: "100px",
-  borderTop: `1px solid ${vars.color.secondary}`,
+  borderTop: `1px solid ${vars.color.border}`,
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -41,10 +43,10 @@ export const footer_link = style({
 });
 
 export const title = style({
-  backgroundColor: vars.color.brand,
+  backgroundColor: vars.color.primary,
   fontFamily: vars.font.body,
   fontSize: "4rem",
-  color: "white",
+  color: vars.color.secondary,
   margin: 0,
   lineHeight: 1.15,
 });

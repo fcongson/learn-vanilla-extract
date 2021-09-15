@@ -3,10 +3,10 @@ import { createTheme } from "@vanilla-extract/css";
 const theme = createTheme({
   color: {
     brand: "black",
-    primary: "black",
-    secondary: "white",
-    background: "white",
-    border: "lightgray",
+    primary: "white",
+    secondary: "black",
+    background: "#101010",
+    border: "gray",
   },
   font: {
     body: "monospace",
