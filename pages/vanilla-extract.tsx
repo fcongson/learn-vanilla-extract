@@ -6,7 +6,7 @@ import { join } from "path";
 import React from "react";
 import { Layout } from "../components/Layout";
 import { title } from "../styles/home.css";
-import { mdxStyle } from "../styles/page.css";
+import { mdxContent } from "../styles/page.css";
 
 const postsDirectory = join(process.cwd(), "content");
 
@@ -22,7 +22,7 @@ const VanillaExtract: NextPage<{ source: MDXRemoteSerializeResult }> = ({
 }) => (
   <Layout>
     <h1 className={title}>Vanilla Extract</h1>
-    <div className={mdxStyle}>
+    <div className={mdxContent}>
       <MDXRemote {...source} />
     </div>
   </Layout>

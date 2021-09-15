@@ -41,11 +41,12 @@ export const card = style({
   padding: "1.5rem",
   border: `1px solid ${vars.color.border}`,
   borderRadius: "10px",
-  transition: "color 0.15s ease, border-color 0.15s ease",
+  transition: "color 0.15s ease, border 0.15s ease, background 0.15s ease",
   width: "45%",
   height: "100%",
   ":hover": {
     border: `1px solid ${vars.color.active}`,
+    background: "rgba(128, 0, 128, 0.2)",
   },
   "@media": {
     "screen and (max-width: 600px)": {
