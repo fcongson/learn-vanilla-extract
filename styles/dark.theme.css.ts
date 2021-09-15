@@ -4,7 +4,7 @@ const theme = createTheme({
   color: {
     brand: "black",
     primary: "white",
-    secondary: "black",
+    secondary: "#101010",
     background: "#101010",
     border: "gray",
   },
