@@ -1,61 +1,13 @@
 import { style } from "@vanilla-extract/css";
 import { atoms, vars } from "./theme.css";
 
-export const container = style([
-  {
-    fontFamily: vars.font.body,
-    fontSize: "1rem",
-    minHeight: "100vh",
-    padding: "0 0.5rem",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100vh",
-    // backgroundColor: vars.color.background,
-    // color: vars.color.primary,
-  },
-  atoms({
-    background: { lightMode: "background", darkMode: "primary" },
-    color: { lightMode: "primary", darkMode: "secondary" },
-  }),
-]);
-
-export const main = style({
-  padding: "5rem 0",
-  flex: 1,
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-});
-
-export const footer = style({
-  fontFamily: vars.font.body,
-  width: "100%",
-  height: "100px",
-  borderTop: `1px solid ${vars.color.border}`,
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-});
-
-export const footer_link = style({
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "center",
-  alignItems: "center",
-});
-
 export const title = style([
   {
-    // backgroundColor: vars.color.primary,
-    // color: vars.color.secondary,
     fontFamily: vars.font.body,
     fontSize: "4rem",
     margin: 0,
     lineHeight: 1.15,
+    textAlign: "center",
   },
   atoms({
     background: { lightMode: "brand", darkMode: "secondary" },
@@ -70,11 +22,34 @@ export const title_link = style({
 });
 
 export const content = style({
-  width: "800px",
+  maxWidth: "800px",
   margin: "4rem 0",
   lineHeight: "1.7rem",
 });
 
-export const logo = style({
-  marginLeft: "0.5rem",
+export const grid = style({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  flexWrap: "wrap",
+  maxWidth: "800px",
+  marginTop: "3rem",
+});
+
+export const card = style({
+  margin: "1rem",
+  padding: "1.5rem",
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: "10px",
+  transition: "color 0.15s ease, border-color 0.15s ease",
+  width: "45%",
+  ":hover": {
+    border: `1px solid ${vars.color.active}`,
+  },
+  "@media": {
+    "screen and (max-width: 600px)": {
+      width: "100%",
+      flexDirection: "column",
+    },
+  },
 });

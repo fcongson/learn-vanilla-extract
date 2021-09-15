@@ -17,3 +17,9 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Learn More
+
+Vanilla Extract [Styling API](https://vanilla-extract.style/documentation/styling-api/)
+
+[Sprinkles](https://github.com/seek-oss/vanilla-extract/tree/master/packages/sprinkles), zero-runtime atomic CSS framework for vanilla-extract.

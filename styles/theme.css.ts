@@ -8,6 +8,7 @@ const theme = createTheme({
     secondary: "white",
     background: "white",
     border: "lightgray",
+    active: "purple",
   },
   font: {
     body: "monospace",
