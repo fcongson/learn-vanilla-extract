@@ -22,14 +22,14 @@ const Home: NextPage = () => {
       <div className={grid}>
         <Link href="/vanilla-extract">
           <a className={card}>
-            <h2>Vanilla Extract &rarr;</h2>
+            <h2>Vanilla Extract Leranings &rarr;</h2>
             <p>Adding typesafe, locally scoped classes, variables and themes</p>
           </a>
         </Link>
 
         <Link href="/sprinkles">
           <a className={card}>
-            <h2>Sprinkles &rarr;</h2>
+            <h2>Sprinkles Learnings &rarr;</h2>
             <p>Adding typesafe custom utility classes</p>
           </a>
         </Link>

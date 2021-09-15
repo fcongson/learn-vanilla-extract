@@ -12,8 +12,6 @@ export const container = style([
     justifyContent: "center",
     alignItems: "center",
     height: "100vh",
-    // backgroundColor: vars.color.background,
-    // color: vars.color.primary,
   },
   atoms({
     background: { lightMode: "background", darkMode: "primary" },

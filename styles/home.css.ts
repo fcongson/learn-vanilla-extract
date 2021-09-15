@@ -43,12 +43,14 @@ export const card = style({
   borderRadius: "10px",
   transition: "color 0.15s ease, border-color 0.15s ease",
   width: "45%",
+  height: "100%",
   ":hover": {
     border: `1px solid ${vars.color.active}`,
   },
   "@media": {
     "screen and (max-width: 600px)": {
       width: "100%",
+      height: "unset",
       flexDirection: "column",
     },
   },
